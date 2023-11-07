@@ -14,9 +14,9 @@ export default function ComingSoon() {
   return (
     <div className="absolute top-0 left-0 right-0 bottom-0">
       <video
-        // autoPlay={true}
+        autoPlay={true}
         // loop={true}
-        // muted={true}
+        muted={true}
         controls
         style={{ width: "100vw", height: "100vh", objectFit: "cover", position: 'fixed' }}
       >

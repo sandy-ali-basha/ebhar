@@ -30,11 +30,11 @@ export default function ComingSoon() {
         <source src={videoBgMov} type="video/mov" />
         <source src={videoBgMp4} type="video/mp4" />
       </video>
-      {/* <div className="absolute top-0 w-full h-full flex flex-col">
+      <div className="absolute top-0 w-full h-full flex flex-col">
         <Header />
         <SailingSoon />
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 }

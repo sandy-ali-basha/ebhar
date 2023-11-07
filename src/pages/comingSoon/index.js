@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 // components
 import Header from "../../components/common/Header";
@@ -11,13 +11,18 @@ import videoBgMp4 from "../../assets/videos/coming-soon-bg.mp4";
 import { SailingSoon } from "./sailingSoon";
 
 export default function ComingSoon() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  }, []);
+
   return (
     <div className="absolute top-0 left-0 right-0 bottom-0">
       <video
-        autoPlay={true}
-        // loop={true}
-        muted={true}
-        controls
+        ref={videoRef} muted loop playsInline
         style={{ width: "100vw", height: "100vh", objectFit: "cover", position: 'fixed' }}
       >
         <source src={videoBg} type="video/webm" />

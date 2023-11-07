@@ -17,7 +17,7 @@ export default function ComingSoon() {
         autoPlay
         loop
         muted
-        // className="absolute top-0 left-0 right-0 bottom-0"
+        controls={false}
         style={{ width: "100vw", height: "100vh", objectFit: "cover", position: 'fixed' }}
       >
         <source src={videoBg} type="video/webm" />
@@ -26,11 +26,11 @@ export default function ComingSoon() {
         <source src={videoBgMp4} type="video/mp4" />
 
       </video>
-      <div className="absolute top-0 w-full h-full flex flex-col">
+      {/* <div className="absolute top-0 w-full h-full flex flex-col">
         <Header />
         <SailingSoon />
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

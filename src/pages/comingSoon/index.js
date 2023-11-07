@@ -14,9 +14,9 @@ export default function ComingSoon() {
   return (
     <div className="absolute top-0 left-0 right-0 bottom-0">
       <video
-        autoPlay
-        loop
-        muted
+        autoPlay={true}
+        loop={true}
+        muted={true}
         controls={false}
         style={{ width: "100vw", height: "100vh", objectFit: "cover", position: 'fixed' }}
       >
@@ -24,7 +24,6 @@ export default function ComingSoon() {
         <source src={videoBgAvi} type="video/avi" />
         <source src={videoBgMov} type="video/mov" />
         <source src={videoBgMp4} type="video/mp4" />
-
       </video>
       {/* <div className="absolute top-0 w-full h-full flex flex-col">
         <Header />
